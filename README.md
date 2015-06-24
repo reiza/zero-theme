@@ -1,3 +1,3 @@
-# zero-theme
+# Zero Theme
 
-A simple theme, zero worries.
+A simple theme for Moodle 2.8, zero worries.
