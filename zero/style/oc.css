@@ -259,14 +259,14 @@ div.block_settings div.content {
 
 #logo-oc {
 	//background-color: rgba(191, 87, 0, 1);
-	background-color: rgba(51, 63, 72, 0.95);
+	//background-color: rgba(51, 63, 72, 0.95);
 	background-color: rgba(240, 240, 240, 0.95);
 
-    -webkit-transition: background-color 75ms ease-out;
-    -moz-transition: background-color 75ms ease-out;
-    -o-transition: background-color 75ms ease-out;
-    -ms-transition: background-color 75ms ease-out;
-    transition: background-color 75ms ease-out;
+    -webkit-transition: background-color 250ms linear;
+    -moz-transition: background-color 250ms linear;
+    -o-transition: background-color 250ms linear;
+    -ms-transition: background-color 250ms linear;
+    transition: background-color 250ms linear;
 	
 }
 

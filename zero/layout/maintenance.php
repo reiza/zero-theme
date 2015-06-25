@@ -42,19 +42,21 @@ echo $OUTPUT->doctype() ?>
 
 <div id="page" class="container-fluid">
 
+    <header id="page-header" class="clearfix">
+        <?php echo $html->heading; ?>
+    </header>
+
     <div id="page-content" class="row-fluid">
         <section id="region-main" class="span12">
             <?php echo $OUTPUT->main_content(); ?>
         </section>
     </div>
 
-    <?php require_once('footer.php'); ?>
+   	<?php require_once('footer.php'); ?>
 
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
 </div>
-
 	<?php require_once('js_inject.php'); ?>
-
 </body>
 </html>

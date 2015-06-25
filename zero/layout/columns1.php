@@ -38,20 +38,12 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<?php require_once('header.php'); ?>
+	<?php require_once('header.php'); ?>
+
 
 <div id="page" class="container-fluid">
 
-    <header id="page-header" class="clearfix">
-        <?php echo $html->heading; ?>
-        <div id="page-navbar" class="clearfix">
-            <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
-            <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
-        </div>
-        <div id="course-header">
-            <?php echo $OUTPUT->course_header(); ?>
-        </div>
-    </header>
+    <?php echo $OUTPUT->full_header(); ?>
 
     <div id="page-content" class="row-fluid">
         <section id="region-main" class="span12">
@@ -65,11 +57,10 @@ echo $OUTPUT->doctype() ?>
 
 	<?php require_once('footer.php'); ?>
 
+
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
 </div>
-
 	<?php require_once('js_inject.php'); ?>
-
 </body>
 </html>

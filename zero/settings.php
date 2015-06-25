@@ -31,8 +31,8 @@
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-	
-    // Invert Navbar to dark background.
+
+    // Choose Campus.
     $name = 'theme_zero/campus';
     $title = 'Campus';
     $description = 'Campus swatch choice';
@@ -46,22 +46,6 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configselect($name, $title, $description, 'OC', $campuses);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
-
-    // Invert Navbar to dark background.
-    $name = 'theme_zero/invert';
-    $title = get_string('invert', 'theme_zero');
-    $description = get_string('invertdesc', 'theme_zero');
-    $setting = new admin_setting_configcheckbox($name, $title, $description, 0);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $settings->add($setting);
-
-    // Logo file setting.
-    $name = 'theme_zero/logo';
-    $title = get_string('logo','theme_zero');
-    $description = get_string('logodesc', 'theme_zero');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    //$settings->add($setting);
 
     // Custom CSS file.
     $name = 'theme_zero/customcss';

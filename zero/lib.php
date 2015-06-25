@@ -106,39 +106,13 @@ function theme_zero_pluginfile($course, $cm, $context, $filearea, $args, $forced
  * @return string The CSS which now contains our custom CSS.
  */
 function theme_zero_set_customcss($css, $customcss) {
-	// per campus custom bits
-    /*
-	global $PAGE;
-	$campus = $PAGE->theme->settings->campus;
-	
-	$rgbHeadingCampuses = array(
-		'OC' => '191, 87, 0', // OC campus colour
-		'STA' => '70, 130, 180', // STA campus colour
-		'MON' => '165, 42, 42', // MON campus colour
-		'CAV' => '218, 165, 32', // CAV campus colour
-		);
-		
-	$campusInsert = "
-		
-		.course-content h1, h2, h3, h4, h5, h6 {
-			color: $rgbHeadingCampuses[$campus];
-		}
-		
-	";
-	
-	$customcss .= $campusInsert;
-	//*/
-	$tag = '[[setting:customcss]]';
+    $tag = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {
         $replacement = '';
     }
-	
-
 
     $css = str_replace($tag, $replacement, $css);
-	
-	
 
     return $css;
 }
@@ -159,13 +133,11 @@ function theme_zero_set_customcss($css, $customcss) {
 function theme_zero_get_html_for_settings(renderer_base $output, moodle_page $page) {
     global $CFG;
     $return = new stdClass;
-
+	
     $return->campus = '';
     if (!empty($page->theme->settings->campus)) {
         $return->campus .= ' '.$page->theme->settings->campus;
     }
-
-
 
     $return->navbarclass = '';
     if (!empty($page->theme->settings->invert)) {
@@ -173,7 +145,7 @@ function theme_zero_get_html_for_settings(renderer_base $output, moodle_page $pa
     }
 
     if (!empty($page->theme->settings->logo)) {
-        $return->heading = html_writer::link($CFG->wwwroot, '', array('title' => get_string('home'), 'class' => 'logo'));
+        $return->heading = html_writer::tag('div', '', array('class' => 'logo'));
     } else {
         $return->heading = $output->page_heading();
     }

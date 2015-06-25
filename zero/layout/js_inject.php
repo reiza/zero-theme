@@ -62,6 +62,14 @@ $rgbaH = $rgbaOCampuses[$campus];
 	});	
 	
 	Y.on('domready', function () {
+		var body = document.body,
+	    html = document.documentElement;
+
+		var height = Math.max( body.scrollHeight, body.offsetHeight, 
+	                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+		var pCon = Y.one('#page-content');
+		pCon.setStyle('min-height', (height-236)+'px');
+				
 		
 		var node = Y.one('#logo-oc');
 		node.setStyle('backgroundColor', 'rgba('+rgbaO+')');
