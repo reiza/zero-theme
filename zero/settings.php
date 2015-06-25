@@ -32,7 +32,7 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
 	
-    // Invert Navbar to dark background.
+    // Choose Campus.
     $name = 'theme_zero/campus';
     $title = 'Campus';
     $description = 'Campus swatch choice';
