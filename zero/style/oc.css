@@ -524,4 +524,25 @@ ol {
     padding: 0 5px
 }
 
+body header.navbar.navbar-fixed-top.moodle-has-zindex{
+    margin-bottom: 0;
+}
+
+body.mobiletheme {
+	padding:0;
+}
+
+body.mobiletheme header.navbar.navbar-fixed-top.moodle-has-zindex{
+    margin-bottom: 0;
+}
+
+body.mobiletheme .page-context-header .page-header-headings {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+body.mobiletheme h1 {
+	line-height:1.1em;
+}
+
 

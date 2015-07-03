@@ -96,7 +96,7 @@ $campuses = array(
 						&copy; <a href="http://<?php echo $displayCampus[1]; ?>">2014 UWI <?php echo $displayCampus[0]; ?></a>. All Rights Reserved.
 					</div>
 					
-					<div class="social copyright span6 pull-right">
+					<div class="social copyright span6 pull-right hidden-phone ">
 						  
 						<map name="Map">
 							<area shape="rect" coords="1,2,23,18" href="http://www.uwi.edu/territories/anguilla.htm" alt="Anguilla">
@@ -116,7 +116,7 @@ $campuses = array(
 							<area shape="rect" coords="378,1,400,19" href="http://www.uwi.edu/territories/trinidad.htm" alt="The Republic Of Trinidad &amp; Tobago">
 							<area shape="rect" coords="404,3,430,19" href="http://www.uwi.edu/territories/turks_and_caicos.htm" alt="Turks &amp; Caicos Islands">
 						</map>
-						<img class="hidden-phone pull-right" src="<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map" />							
+						<img class="pull-right hidden-phone " src="<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map" />							
 					</div><!--//social-->
 				</div><!--//row-->
 			</div><!--//container-->
