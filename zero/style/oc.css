@@ -546,3 +546,6 @@ body.mobiletheme h1 {
 }
 
 
+.page-header-headings h1 span.label.labelinstance.courseheaderdecoration {
+	vertical-align: middle;
+}
