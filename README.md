@@ -1,5 +1,5 @@
 # Zero Theme
 
-A simple theme for Moodle 2.9, zero worries.
+A simple theme for Moodle zero worries.
 
-2.8 branch also available
+Moodle 3.1 required
