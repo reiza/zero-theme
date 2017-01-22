@@ -98,7 +98,7 @@ $rgbaH = $rgbaOCampuses[$campus];
 		window.courseListLabelSetup = function(){
 							
 			var cnameselems = document.querySelectorAll('.coursename a')
-			var re = /\| [MST][123] 1[3456]\/1[4567]$/;								
+			var re = /\| [MST][123] 201[3456]\/1[4567]$/;								
 			var str = "";
 			var x = "";
 			var label = "";
@@ -159,7 +159,7 @@ $rgbaH = $rgbaOCampuses[$campus];
 		window.courseHeaderLabelSetup = function(){
 						
 			var cnameselems = document.querySelectorAll('.page-header-headings h1')
-			var re = /\| [MST][123] 1[3456]\/1[4567]$/;								
+			var re = /\| [MST][123] 201[3456]\/1[4567]$/;								
 			var str = "";
 			var x = "";
 			var label = "";

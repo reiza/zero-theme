@@ -52,9 +52,9 @@ $campuses = array(
 							<div class="footer-col-inner">
 								<h2>Tools</h2>
 								<ul>
-									<li><a href="http://my.open.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>MyOC</a></li>
+									<li><a href="http://myopen.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>MyOC</a></li>
 									<li><a href="http://my.mail.open.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>My Email</a></li>
-									<li><a href="http://eportfolio.open.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>e-Portfolio</a></li>
+									<li><a href="http://eportfolio.tle.courses.open.uwi.edu/auth/oc/index.php" target="_blank"><i class="fa fa-caret-right"></i>e-Portfolio</a></li>
 								</ul>      
 							</div><!--//footer-col-inner-->
 						</div><!--//foooter-col--> 
@@ -64,7 +64,7 @@ $campuses = array(
 								<ul>
 									<li><a href="mailto:academic-support@open.uwi.edu" target="_blank"><i class="fa fa-caret-right"></i>Academic Support</a></li>
 									<li><a href="http://help.open.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>Help Desk</a></li>
-									<li><a href="http://requirements.open.uwi.edu" target="_blank"><i class="fa fa-caret-right"></i>Browser Check</a></li>
+									<!-- li><a href="http://requirements.open.uwi.edu" target="_blank"><i class="fa fa-caret-right"></i>Browser Check</a></li -->
 								</ul>   
 							</div><!--//footer-col-inner-->
 						</div><!--//foooter-col--> 
@@ -85,7 +85,27 @@ $campuses = array(
 					</div>     
 				</div>    
 			<?php endif; ?>
+			<small class="social copyright muted">
+			<?php
+
+				$r = get_performance_info();
+				$h = substr(gethostname(), 0, 11);
+				$l = $h . ' '. $_SERVER['HTTP_HOST'] .' '. time() . ' ' . $r['txt']."\n";
+				$f = '/data/tlog/' . $h . '.' . $_SERVER['HTTP_HOST'] . '.log';
+				echo $h . ' | ';
+				echo number_format($r['memory_total']/1024/1024, 1). 'M/';
+				echo number_format($r['memory_peak']/1024/1024, 1). 'M | ';
+				echo $r['sessionsize']. ' | ';
+				echo $r['dbqueries']. ' | ';
+				echo number_format($r['dbtime'], 3). 's/';
+				echo number_format($r['realtime'], 3). 's | ';
+				echo $r['serverload']. '';
 	      
+				//error_log($l, 3, $f);
+
+			?>
+	      	</small>
+
 		</div>
 		<div class="bottom-bar">
 			<div class="container">
@@ -93,30 +113,33 @@ $campuses = array(
 					
 
 					<div class="social copyright span6 pull-left">
-						&copy; <a href="http://<?php echo $displayCampus[1]; ?>">2014 UWI <?php echo $displayCampus[0]; ?></a>. All Rights Reserved.
+						&copy;<?php echo date('Y'); ?> <a href="http://<?php echo $displayCampus[1]; ?>">UWI <?php echo $displayCampus[0]; ?>.</a> 
+						All Rights Reserved.
+						
 					</div>
 					
 					<div class="social copyright span6 pull-right hidden-phone ">
 						  
 						<map name="Map">
-							<area shape="rect" coords="1,2,23,18" href="http://www.uwi.edu/territories/anguilla.htm" alt="Anguilla">
-							<area shape="rect" coords="28,2,50,18" href="http://www.uwi.edu/territories/antigua.htm" alt="Antigua">
-							<area shape="rect" coords="54,1,77,19" href="http://www.uwi.edu/territories/bahamas.htm" alt="Bahamas">
-							<area shape="rect" coords="81,-1,104,19" href="http://www.uwi.edu/territories/barbados.htm" alt="Barbados">
-							<area shape="rect" coords="108,1,132,19" href="http://www.uwi.edu/territories/belize.htm" alt="Belize">
-							<area shape="rect" coords="136,-1,158,18" href="http://www.uwi.edu/territories/bvi.htm" alt="The British Virgin Islands">
-							<area shape="rect" coords="162,-1,185,19" href="http://www.uwi.edu/territories/cayman.htm" alt="The Cayman Islands">
-							<area shape="rect" coords="190,1,212,19" href="http://www.uwi.edu/territories/dominica.htm" alt="Dominica">
-							<area shape="rect" coords="216,1,239,19" href="http://www.uwi.edu/territories/grenada.htm" alt="Grenada">
-							<area shape="rect" coords="243,1,267,19" href="http://www.uwi.edu/territories/jamaica.htm" alt="Jamaica">
-							<area shape="rect" coords="271,1,292,19" href="http://www.uwi.edu/territories/montserrat.htm" alt="Montserrat">
-							<area shape="rect" coords="297,2,320,20" href="http://www.uwi.edu/territories/st_kitts.htm" alt="St. Kitts">
-							<area shape="rect" coords="324,1,347,19" href="http://www.uwi.edu/territories/st_lucia.htm" alt="St. Lucia">
-							<area shape="rect" coords="351,-1,374,17" href="http://www.uwi.edu/territories/st_vincent.htm" alt="St. Vincent">
-							<area shape="rect" coords="378,1,400,19" href="http://www.uwi.edu/territories/trinidad.htm" alt="The Republic Of Trinidad &amp; Tobago">
-							<area shape="rect" coords="404,3,430,19" href="http://www.uwi.edu/territories/turks_and_caicos.htm" alt="Turks &amp; Caicos Islands">
+							<area shape="rect" coords="0,8,26,24" href="http://www.uwi.edu/anguilla.asp" target="_blank" alt="Anguilla">
+							<area shape="rect" coords="32,8,58,24" href="http://www.uwi.edu/antigua.asp" target="_blank" alt="Antigua and Barbuda">
+							<area shape="rect" coords="64,8,90,24" href="http://www.uwi.edu/bahamas.asp" target="_blank" alt="The Bahamas">
+							<area shape="rect" coords="96,8,122,24" href="http://www.uwi.edu/barbados.asp" target="_blank" alt="Barbados">
+							<area shape="rect" coords="128,8,154,24" href="http://www.uwi.edu/belize.asp" target="_blank" alt="Belize">
+							<area shape="rect" coords="160,8,186,24" href="http://www.uwi.edu/bvi.asp" target="_blank" alt="British Virgin Islands">
+							<area shape="rect" coords="192,8,218,24" href="http://www.uwi.edu/cayman.asp" target="_blank" alt="Cayman Islands">
+							<area shape="rect" coords="224,8,250,24" href="http://www.uwi.edu/dominica.asp" target="_blank" alt="Dominica">
+							<area shape="rect" coords="256,8,282,24" href="http://www.uwi.edu/grenada.asp" target="_blank" alt="Grenada">
+							<area shape="rect" coords="288,8,314,24" href="http://www.uwi.edu/jamaica.asp" target="_blank" alt="Jamaica">
+							<area shape="rect" coords="320,8,346,24" href="http://www.uwi.edu/montserrat.asp" target="_blank" alt="Montserrat">
+							<area shape="rect" coords="352,8,378,24" href="http://www.uwi.edu/stkitts.asp" target="_blank" alt="St Kitts and Nevis">
+							<area shape="rect" coords="384,8,410,24" href="http://www.uwi.edu/stlucia.asp" target="_blank" alt="St Lucia">
+							<area shape="rect" coords="416,8,442,24" href="http://www.uwi.edu/stvincent.asp" target="_blank" alt="St Vincent and the Grenadines">
+							<area shape="rect" coords="448,8,474,24" href="http://www.uwi.edu/tt.asp" target="_blank" alt="Trinidad and Tobago">
+							<area shape="rect" coords="480,8,506,24" href="http://www.uwi.edu/turks.asp" target="_blank" alt="Turks and Caicos">
 						</map>
 						<img class="pull-right hidden-phone " src="<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map" />							
+					
 					</div><!--//social-->
 				</div><!--//row-->
 			</div><!--//container-->
