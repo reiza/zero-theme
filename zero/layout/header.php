@@ -4,8 +4,12 @@
         <div class="container-fluid">
             <a class="brand brand-oc hidden-phone" href="<?php echo $CFG->wwwroot;?>"><?php echo
                 format_string($SITE->fullname, true, array('context' => context_course::instance(SITEID)));
-                ?></a>
-
+                ?>
+            </a>
+			<a class="brand visible-phone" href="<?php echo $CFG->wwwroot;?>" style="padding-left:12px;"><?php echo
+                format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
+                ?>
+            </a>
             <?php echo $OUTPUT->user_menu(); ?>
             <div class="nav-collapse collapse">
                 <?php echo $OUTPUT->custom_menu(); ?>
@@ -16,8 +20,8 @@
         </div>
     </nav>
 </header>
-	<div class="container-fluid hidden-phone" id="logo-oc">
-		<img id="zero-uwi-logo" title='University of the West Indies, Open Campus' src='<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/logo-uwi-trans-<?php echo $PAGE->theme->settings->campus; ?>.png'.png' height="72"/>
+	<div class="container-fluid" id="logo-oc">
+		<img class="hidden-phone" id="zero-uwi-logo" title='University of the West Indies, Open Campus' src='<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/logo-uwi-trans-<?php echo $PAGE->theme->settings->campus; ?>.png'.png' height="72"/>
+		<img class="visible-phone" id="zero-uwi-logo" title='University of the West Indies, Open Campus' src='<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/logo-uwi-trans-<?php echo $PAGE->theme->settings->campus; ?>.png'.png' style="width:90%;padding:5px 12px;"/>
+
 	</div>
-
-

@@ -31,7 +31,7 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -39,8 +39,7 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-	<?php require_once('header.php'); ?>
-
+<?php require_once('header.php'); ?>
 
 <div id="page" class="container-fluid">
 
@@ -56,12 +55,13 @@ echo $OUTPUT->doctype() ?>
         </section>
     </div>
 
-	<?php require_once('footer.php'); ?>
-
+    <?php require_once('footer.php'); ?>
 
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
 </div>
-	<?php require_once('js_inject.php'); ?>
+
+<?php require_once('js_inject.php'); ?>
+
 </body>
 </html>

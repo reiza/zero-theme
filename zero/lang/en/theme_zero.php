@@ -46,7 +46,8 @@ Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
 </div></div>';
 
 $string['configtitle'] = 'Zero';
-$string['choosereadme'] = 'Zero, a Moodle 2.8+ theme by OC Dev Team.';
+$string['choosereadme'] = 'Zero, a Moodle 3.1+ theme by OC Dev Team.';
+
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
 
@@ -57,10 +58,15 @@ $string['invert'] = 'Invert navbar';
 $string['invertdesc'] = 'Swaps text and background for the navbar at the top of the page between black and white.';
 
 $string['logo'] = 'Logo';
-$string['logodesc'] = 'The logo is displayed in the header.<br /> If the height of your logo is more than 75px add div.logo {height: 100px;} to the Custom CSS box below, amending accordingly if the height is other than 100px.';
+$string['logodesc'] = 'The logo is only displayed in the header of the front page and login page.<br /> If the height of your logo is more than 75px add div.logo {height: 100px;} to the Custom CSS box below, amending accordingly if the height is other than 100px.';
 
 $string['pluginname'] = 'Zero';
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 
+$string['sitelogo'] = 'Site logo';
+$string['sitename'] = 'Display site name along with small logo';
+$string['sitenamedesc'] = 'If there is no small logo, the site name is always displayed in the navigation bar. If a small logo is set, it may be displayed with or without the site name.';
+$string['smalllogo'] = 'Small logo';
+$string['smalllogodesc'] = 'The small logo is displayed in the navigation bar. If there is a header logo for the front page and login page, the small logo is not displayed on these pages.';

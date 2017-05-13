@@ -2,19 +2,19 @@
 $campus = $PAGE->theme->settings->campus;
 $rgbaOCampuses = array(
 	'OC' => '191, 87, 0, 0.90',
+	//'OC' => '237, 139, 0, 1.0',
 	'STA' => '70, 130, 180, 0.90',
+	'STA' => '0, 94, 184, 0.90',
 	'MON' => '165, 42, 42, 0.90',
-	'CAV' => '218, 165, 32, 0.90');
+	'MON' => '137, 0, 0, 0.90',
+	'CAV' => '218, 165, 32, 0.90',
+	'CAV' => '242, 169, 0, 0.90',
+	'XCM' => '0, 122, 82, 0.90'
+	);
 	
 $rgbaH = $rgbaOCampuses[$campus];
 
 ?>
-
-<style type="text/css" media="screen">
-#logo-oc {
-	//background-color: rgba(<?php echo $rgbaH; ?>);
-}
-</style>
 
 <script>
 	campus = '<?php echo $PAGE->theme->settings->campus; ?>';
@@ -22,16 +22,26 @@ $rgbaH = $rgbaOCampuses[$campus];
 	//*
 	rgbaOCampuses = {};
 	rgbaOCampuses.OC = '191, 87, 0, 0.90'; // OC campus colour
+	//rgbaOCampuses.OC = '237, 139, 0, 0.90'; // OC campus colour
 	rgbaOCampuses.STA = '70, 130, 180, 0.90'; // STA campus colour
+	//rgbaOCampuses.STA = '0, 94, 184, 0.90'; // STA campus colour
 	rgbaOCampuses.MON = '165, 42, 42, 0.90'; // MON campus colour
+	rgbaOCampuses.MON = '137, 0, 0, 0.90'; // MON campus colour
 	rgbaOCampuses.CAV = '218, 165, 32, 0.90'; // CAV campus colour
+	rgbaOCampuses.CAV = '242, 169, 0, 0.90'; // CAV campus colour
+	rgbaOCampuses.XCM = '0, 122, 82, 0.90'; // CAV campus colour
 	//*/
 	
 	rgbHeadingCampuses = {};
 	rgbHeadingCampuses.OC = '191, 87, 0'; // OC campus colour
+	//rgbHeadingCampuses.OC = '237, 139, 0'; // OC campus colour
 	rgbHeadingCampuses.STA = '70, 130, 180'; // STA campus colour
+	//rgbHeadingCampuses.STA = '0, 94, 184'; // STA campus colour
 	rgbHeadingCampuses.MON = '165, 42, 42'; // MON campus colour
+	rgbHeadingCampuses.MON = '137, 0, 0'; // MON campus colour
 	rgbHeadingCampuses.CAV = '218, 165, 32'; // CAV campus colour
+	rgbHeadingCampuses.CAV = '242, 169, 0'; // CAV campus colour
+	rgbHeadingCampuses.XCM = '0, 122, 82'; // CAV campus colour
 	
 	rgbT = rgbHeadingCampuses[campus];
 	rgbaO = rgbaOCampuses[campus]; // OC campus colour
@@ -67,8 +77,11 @@ $rgbaH = $rgbaOCampuses[$campus];
 
 		var height = Math.max( body.scrollHeight, body.offsetHeight, 
 	                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+		
+		var ftr = document.getElementById('page-footer');
+		var pgCon = document.getElementById('page-content');
 		var pCon = Y.one('#page-content');
-		pCon.setStyle('min-height', (height-236)+'px');
+		pCon.setStyle('min-height', (height-(40+70+101+163+pgCon.clientHeight)+pgCon.clientHeight)+'px');
 				
 		
 		var node = Y.one('#logo-oc');
@@ -88,13 +101,14 @@ $rgbaH = $rgbaOCampuses[$campus];
 			
 		var ms = document.getElementsByTagName('marquee');
 		for (var i=0;i<ms.length;i++) { 
-			var childGuest = document.createElement("p");
+			var childGuest = document.createElement('p');
+			childGuest.className += ' alert alert-info pulse';
 			childGuest.innerText=ms[i].innerText;
 			ms[i].parentNode.appendChild(childGuest);
 			ms[i].parentNode.removeChild(ms[i]);
 		}
-		
-		
+
+	
 		window.courseListLabelSetup = function(){
 							
 			var cnameselems = document.querySelectorAll('.coursename a')

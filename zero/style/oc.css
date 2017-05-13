@@ -9,6 +9,12 @@
 }
 
 body{
+	margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    color: #333;
+    background-color: #fff;
 }
 
 
@@ -22,7 +28,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-	font-weight:lighter;
+	/font-weight:lighter;
+	font-weight:300;
 }
 .course-content h1,h2,h3,h4,h5,h6{
 	/color:rgb(191, 87, 0);
@@ -268,11 +275,11 @@ div.block_settings div.content {
 	//background-color: rgba(51, 63, 72, 0.95);
 	background-color: rgba(240, 240, 240, 0.95);
 
-    -webkit-transition: background-color 250ms linear;
-    -moz-transition: background-color 250ms linear;
-    -o-transition: background-color 250ms linear;
-    -ms-transition: background-color 250ms linear;
-    transition: background-color 250ms linear;
+    -webkit-transition: background-color 220ms linear;
+    -moz-transition: background-color 220ms linear;
+    -o-transition: background-color 220ms linear;
+    -ms-transition: background-color 220ms linear;
+    transition: background-color 220ms linear;
 	
 }
 
@@ -280,6 +287,13 @@ div.block_settings div.content {
 	margin-top:-20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+
+.mobiletheme #logo-oc {
+	margin-top:0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .brand.brand-oc, .navbar-text .navbar-text-oc, .navbar .nav>li>a, .navbar-inner-oc > span.usertext
@@ -304,6 +318,9 @@ a.brand.brand-oc {
 	margin-left: -16px;
 }
 
+.mobiletheme .usermenu .login {
+	margin-right:20px;
+}
 
 .termblock {
 	width: 48px; height: 28px;
@@ -362,18 +379,19 @@ nav.navbar-inner div.container-fluid{
 }
 
 #page-header #page-navbar div.breadcrumb-button .singlebutton form div input{
-	 margin-bottom: 0px; 
+	 margin-bottom: 5px; 
 }
 
 #page-header h1{
 	margin-bottom:16px;
 	padding-left: 16px;
-
+	color:#606060;
 }
 
 
 #page h1{
 	font-size: 2em;
+	line-height: 1em;
 }
 
 #page h2 {
@@ -482,7 +500,15 @@ ol {
 }
 
 #page-footer .footer-content .adr {
+	
+}
 
+p.adr.clearfix.span12 {
+	text-align:right;
+}
+
+body.ios p.adr.clearfix.span12, body.android p.adr.clearfix.span12 {
+	text-align:left;
 }
 
 #page-footer .footer-content .adr .fa {
@@ -560,6 +586,44 @@ body.mobiletheme h1 {
 }
 
 
+body.mobiletheme .course-content ul.topics li.section,
+body.mobiletheme  .course-content ul.topics li.section .content,
+body.mobiletheme .course-content ul.weeks li.section .content,
+body.mobiletheme .course-content ul.weeks li.section,
+body.mobiletheme .course-content ul.section {
+    margin-right: 5px;
+}
+
 .page-header-headings h1 span.label.labelinstance.courseheaderdecoration {
 	vertical-align: middle;
+}
+
+.course-content ul.topics li.section .summary {
+    margin-left: 9px;
+}
+
+.alert-info {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #d9edf7;
+  }
+  20% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #d9edf7;
+  }
+}
+
+
+@media (max-width: 979px) {
+    #logo-oc {
+		margin-top:0px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
 }

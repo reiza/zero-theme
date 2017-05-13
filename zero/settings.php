@@ -41,7 +41,8 @@ if ($ADMIN->fulltree) {
 		'OC' => 'Open Campus', 
 		'CAV' => 'Cave Hill', 
 		'MON' => 'Mona', 
-		'STA' => 'St. Augustine'
+		'STA' => 'St. Augustine',
+		'XCM' => 'Cross Campus Moodle'
 	);
     $setting = new admin_setting_configselect($name, $title, $description, 'OC', $campuses);
     $setting->set_updatedcallback('theme_reset_all_caches');
