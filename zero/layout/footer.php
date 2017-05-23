@@ -2,7 +2,7 @@
 $campus = $PAGE->theme->settings->campus;
 $campuses = array(
 	'XCM' => array(
-		'UWI',
+		'',
 		'uwi.edu'
 	),
 	'OC' => array(
@@ -112,7 +112,7 @@ $campuses = array(
 
 					<div class="social copyright span6 pull-left">
 						
-						&copy;<?php echo date('Y'); ?><a href="http://<?php echo $displayCampus[1]; ?>">UWI <?php echo $displayCampus[0]; ?>.</a> 
+						&copy;<?php echo date('Y'); ?><a href="http://<?php echo $displayCampus[1]; ?>">UWI <?php echo $displayCampus[0]; ?></a>. 
 						All Rights Reserved.
 						 
 					</div>
