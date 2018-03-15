@@ -21,12 +21,12 @@ $campuses = array(
 		'Cave Hill',
 		'cavehill.uwi.edu'
 	));
-	
+
 	$displayCampus = $campuses[$campus];
 
 ?>
 	<footer id="page-footer" class="footer">
-		<div class="footer-content"> 
+		<div class="footer-content">
 			<div class="container">
 				<div class="row-fluid">
 			        <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
@@ -37,11 +37,11 @@ $campuses = array(
 				</div>
 			</div>
 			<?php if ($campus == 'OC') : ?>
-			
 
-			
+
+
 				<div class="container" style="padding-top:20px;">
-					<div class="row-fluid footerblocks">                
+					<div class="row-fluid footerblocks">
 						<div class="footer-col span3">
 							<div class="footer-col-inner">
 								<div class="row" style="text-align:right;">
@@ -51,7 +51,7 @@ $campuses = array(
 										Tel: (246) 417-4497<br>
 										Fax: (246) 421-6753
 									</p>
-								</div> 
+								</div>
 							</div><!--//footer-col-inner-->
 						</div><!--//foooter-col-->
 						<div class="footer-col span3">
@@ -60,28 +60,28 @@ $campuses = array(
 									<li><a href="http://my.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>UWI Portal</a></li>
 									<li><a href="http://my.mail.open.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>My Email</a></li>
 									<li><a href="http://eportfolio.tle.courses.open.uwi.edu/auth/oc/index.php" target="_blank"><i class="fa fa-caret-right"></i>e-Portfolio</a></li>
-								</ul>   
+								</ul>
 							</div><!--//footer-col-inner-->
-						</div><!--//foooter-col--> 
+						</div><!--//foooter-col-->
 						<div class="footer-col span3">
 							<div class="footer-col-inner">
 								<ul>
 									<li><a href="mailto:academic-support@open.uwi.edu" target="_blank"><i class="fa fa-caret-right"></i>Academic Support</a></li>
 									<li><a href="http://help.open.uwi.edu/" target="_blank"><i class="fa fa-caret-right"></i>Help Desk</a></li>
 									<!-- li><a href="http://requirements.open.uwi.edu" target="_blank"><i class="fa fa-caret-right"></i>Browser Check</a></li -->
-								</ul>   
+								</ul>
 
-							</div><!--//footer-col-inner-->            
-						</div><!--//foooter-col-->  
+							</div><!--//footer-col-inner-->
+						</div><!--//foooter-col-->
 						<div class="footer-col span3">
 							<div class="footer-col-inner">
-								          
-   
-							</div><!--//footer-col-inner-->
-						</div><!--//foooter-col--> 
 
-					</div>     
-				</div>    
+
+							</div><!--//footer-col-inner-->
+						</div><!--//foooter-col-->
+
+					</div>
+				</div>
 			<?php endif; ?>
 			<small class="social copyright muted">
 			<?php
@@ -98,7 +98,7 @@ $campuses = array(
 				echo number_format($r['dbtime'], 3). 's/';
 				echo number_format($r['realtime'], 3). 's | ';
 				echo $r['serverload']. '';
-	      
+
 				//error_log($l, 3, $f);
 
 			?>
@@ -108,17 +108,17 @@ $campuses = array(
 		<div class="bottom-bar">
 			<div class="container">
 				<div class="row-fluid ">
-					
+
 
 					<div class="social copyright span6 pull-left">
-						
+
 						&copy;<?php echo date('Y'); ?><a href="http://<?php echo $displayCampus[1]; ?>">UWI <?php echo $displayCampus[0]; ?></a>. 
 						All Rights Reserved.
-						 
+
 					</div>
-					
+
 					<div class="social copyright span6 pull-right">
-						  
+
 						<map name="Map">
 
 							<area shape="rect" coords="0,8,26,24" href="http://www.uwi.edu/anguilla.asp" target="_blank" alt="Anguilla">
@@ -140,14 +140,14 @@ $campuses = array(
 							<area shape="rect" coords="512,8,538,24" href="http://www.uwi.edu/turks.asp" target="_blank" alt="Turks and Caicos">
 
 						</map>
-						
-						<img class="pull-right hidden-phone " src="<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map"/>							
-						<img class="visible-phone " src="<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map" style="width:100%;"/>							
-					
+
+						<img class="pull-right hidden-phone " src="<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map"/>
+						<img class="visible-phone " src="<?php echo $CFG->wwwroot; ?>/theme/zero/pix/zero/flags.png" alt="National Flags of the UWI Contributing Countries" usemap="#Map" style="width:100%;"/>
+
 					</div><!--//social-->
 				</div><!--//row-->
 			</div><!--//container-->
 		</div>
-	
+
 
 	</footer>
