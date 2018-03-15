@@ -53,7 +53,7 @@ echo $OUTPUT->doctype() ?>
     <?php require_once('favicon.php'); ?>
     <?php echo $OUTPUT->standard_head_html() ?>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="screen">
-	
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -64,9 +64,9 @@ echo $OUTPUT->doctype() ?>
 	<?php require_once('header.php'); ?>
 
 <div id="page" class="container-fluid">
-    
+
 	<?php echo $OUTPUT->full_header(); ?>
-	
+
     <div id="page-content" class="row-fluid">
         <div id="region-main-box" class="<?php echo $regionmainbox; ?>">
             <div class="row-fluid">
@@ -83,7 +83,7 @@ echo $OUTPUT->doctype() ?>
         <?php echo $OUTPUT->blocks('side-post', $sidepost); ?>
     </div>
 
-	<?php require_once('footer.php'); ?>
+	 <?php require_once('footer.php'); ?>
 
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 

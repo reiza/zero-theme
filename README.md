@@ -1,8 +1,8 @@
 # Zero Theme
 
-A simple theme for Moodle, zero worries. 
+A simple theme for Moodle, zero worries.
 
-Moodle 3.1 required
+Moodle 3.4 required
 
 ## Installation
 

@@ -46,7 +46,7 @@ Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
 </div></div>';
 
 $string['configtitle'] = 'Zero';
-$string['choosereadme'] = 'Zero, a Moodle 3.1+ theme by OC Dev Team.';
+$string['choosereadme'] = 'Zero, a Moodle 3.4 theme by OC Dev Team.';
 
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';

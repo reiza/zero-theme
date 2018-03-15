@@ -41,7 +41,7 @@ echo $OUTPUT->doctype() ?>
     <?php require_once('favicon.php'); ?>
     <?php echo $OUTPUT->standard_head_html() ?>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="screen">
-	
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -60,7 +60,7 @@ echo $OUTPUT->doctype() ?>
             echo $OUTPUT->course_content_header();
             echo $OUTPUT->main_content();
             echo $OUTPUT->course_content_footer();
-            
+
             ?>
         </section>
         <?php echo $OUTPUT->blocks('side-pre', $sidepre);
