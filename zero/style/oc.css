@@ -577,3 +577,38 @@ body.mobiletheme .course-content ul.topics li.section, body.mobiletheme .course-
       padding-bottom: 5px;
    }
 }
+
+
+body.uwi-XCM #logo-oc{
+   background-color: rgba(0, 122, 82, 0.90);
+}
+
+body.uwi-XCM .course-content h1, body.uwi-XCM .block .header h2, body.uwi-XCM h3, body.uwi-XCM h4, body.uwi-XCM h5, body.uwi-XCM h6 {
+   color: rgb(0, 122, 82);
+}
+
+body.uwi-OC #logo-oc{
+   background-color: rgba(191, 87, 0, 0.90);
+}
+
+body.uwi-OC .course-content h1, body.uwi-OC .block .header h2, body.uwi-OC h3, body.uwi-OC h4, body.uwi-OC h5, body.uwi-OC h6 {
+   color: rgb(191, 87, 0);
+}
+body.uwi-STA #logo-oc{
+   background-color: rgba(0, 94, 184, 0.90);
+}
+body.uwi-STA .course-content h1, body.uwi-STA .block .header h2, body.uwi-STA h3, body.uwi-STA h4, body.uwi-STA h5, body.uwi-STA h6 {
+   color: rgb(0, 94, 184);
+}
+body.uwi-MON #logo-oc{
+   background-color: rgba(137, 0, 0, 0.90);
+}
+body.uwi-MON .course-content h1, body.uwi-MON .block .header h2, body.uwi-MON h3, body.uwi-MON h4, body.uwi-MON h5, body.uwi-MON h6 {
+   background-color: rgb(137, 0, 0);
+}
+body.uwi-CAV #logo-oc{
+   background-color: rgba(242, 169, 0, 0.90);
+}
+body.uwi-CAV .course-content h1, body.uwi-CAV .block .header h2, body.uwi-CAV h3, body.uwi-CAV h4, body.uwi-CAV h5, body.uwi-CAV h6 {
+   color: rgb(242, 169, 0);
+}

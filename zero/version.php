@@ -7,7 +7,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 201801141403;
+$plugin->version   = 201801142354;
 $plugin->requires  = 2017110800;
 $plugin->component = 'theme_zero';
 $plugin->dependencies = array(
